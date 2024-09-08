@@ -98,7 +98,7 @@ cdn:
 
 # the avatar on sidebar, support local or CORS resources
 avatar:
-  ./assets/img/favicons/mstile-150x150.png
+  https://i.pinimg.com/736x/93/27/0a/93270aae647b2101f2a8c968115f4b21.jpg
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
