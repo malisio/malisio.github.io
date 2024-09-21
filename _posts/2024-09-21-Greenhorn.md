@@ -17,14 +17,7 @@ date: 2024-09-21 16:15:30 +0800
 - Let run rustscan with nmap 
 ```sh
 > rustscan -a greenhorn.htb
-.----. .-. .-. .----..---.  .----. .---.   .--.  .-. .-.
-| {}  }| { } |{ {__ {_   _}{ {__  /  ___} / {} \ |  `| |
-| .-. \| {_} |.-._} } | |  .-._} }\     }/  /\  \| |\  |
-`-' `-'`-----'`----'  `-'  `----'  `---' `-'  `-'`-' `-'
-The Modern Day Port Scanner.
-[~] The config file is expected to be at "/home/malisio/.rustscan.toml"
-[!] File limit is lower than default batch size. Consider upping with --ulimit. May cause harm to sensitive servers
-[!] Your file limit is very small, which negatively impacts RustScan's speed. Use the Docker image, or up the Ulimit with '--ulimit 5000'. 
+
 Open 10.10.11.25:22
 Open 10.10.11.25:80
 Open 10.10.11.25:3000
