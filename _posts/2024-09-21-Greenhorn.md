@@ -16,18 +16,12 @@ date: 2024-09-21 16:15:30 +0800
 ## Enumeration
 - Let run rustscan with nmap 
 ```sh
-rustscan -a greenhorn.htb
+> rustscan -a greenhorn.htb
 .----. .-. .-. .----..---.  .----. .---.   .--.  .-. .-.
 | {}  }| { } |{ {__ {_   _}{ {__  /  ___} / {} \ |  `| |
 | .-. \| {_} |.-._} } | |  .-._} }\     }/  /\  \| |\  |
 `-' `-'`-----'`----'  `-'  `----'  `---' `-'  `-'`-' `-'
 The Modern Day Port Scanner.
-________________________________________
-: http://discord.skerritt.blog         :
-: https://github.com/RustScan/RustScan :
- --------------------------------------
-I don't always scan ports, but when I do, I prefer RustScan.
-
 [~] The config file is expected to be at "/home/malisio/.rustscan.toml"
 [!] File limit is lower than default batch size. Consider upping with --ulimit. May cause harm to sensitive servers
 [!] Your file limit is very small, which negatively impacts RustScan's speed. Use the Docker image, or up the Ulimit with '--ulimit 5000'. 
