@@ -15,8 +15,9 @@ date: 2024-09-21 16:15:30 +0800
 
 ## Enumeration
 - Let run rustscan with nmap 
+
 ```sh
-> rustscan -a greenhorn.htb
+attack@hostname:~$ rustscan -a greenhorn.htb
 
 Open 10.10.11.25:22
 Open 10.10.11.25:80
@@ -120,6 +121,7 @@ SF:st");
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 2 IP addresses (1 host up) scanned in 39.81 seconds
+
 ```
 
 Navigating to the web server running on port 80 we get this 
