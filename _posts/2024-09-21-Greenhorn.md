@@ -181,7 +181,7 @@ junior@greenhorn:~$ls
 Let take a look at the pdf 
 
 ![[/assets/img/pdf_overview.png]]
-Only if we can unblur the password right? Guess what we can do it using this [tool](clone https://github.com/spipm/Depix)
+Only if we can unblur the password right? Guess what we can do it using this [tool]( https://github.com/spipm/Depix)
 convert the pdf file to an image
 ```sh
 python3 depix.py -p org_file.jpg -s images/searchimages/debruinseq_notepad_Windows10_closeAndSpaced.png
