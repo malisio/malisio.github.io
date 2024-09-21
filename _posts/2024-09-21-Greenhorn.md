@@ -15,7 +15,7 @@ date: 2024-09-21 16:15:30 +0800
 
 ## Enumeration
 - Let run rustscan with nmap 
-```bash
+```sh
 rustscan -a greenhorn.htb
 .----. .-. .-. .----..---.  .----. .---.   .--.  .-. .-.
 | {}  }| { } |{ {__ {_   _}{ {__  /  ___} / {} \ |  `| |
