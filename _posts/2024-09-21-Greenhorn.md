@@ -136,15 +136,16 @@ Nmap done: 2 IP addresses (1 host up) scanned in 39.81 seconds
 ```
 
 Navigating to the web server running on port 80 we get this 
-![/assets/img/web-server.png]]
+![Web Server][/assets/img/web-server.png]{: width="700" height="400"}
 - Let take a look at the admin page 
-![[/assets/img/admin.png]]
+![Admin panel][/assets/img/admin.png]{: width="700" height="400"}
+
 hmmm let do some enumeration on port 3000 
 Looking at port 3000 we can see that it is running a self hosted git hub repository taking a look at the repository that is running on port 80 we can see there is a file called pass.php we can see that it contains  a password for the admin page 
 `d5443aef1b64544f3685bf112f6c405218c573c7279a831b1fe9612e3a4d770486743c5580556c0d838b51749de15530f87fb793afdcc689b6b39024d7790163'` and cracking it will give us this password `iloveyou1`.
 ## Exploitation 
 
-![[/assets/img/repo_hash.png]]
+![md5 hash][/assets/img/repo_hash.png]{: width="700" height="400"}
 To get a foothold we will use the [CVE](https://vulners.com/packetstorm/PACKETSTORM:173640)  a file upload chained with RCE.
 Preparing the payload:
 
@@ -180,7 +181,7 @@ junior@greenhorn:~$ls
 - Getting root
 Let take a look at the pdf 
 
-![[/assets/img/pdf_overview.png]]
+![Pdf overiew][/assets/img/pdf_overview.png]{: width="700" height="400"}
 Only if we can unblur the password right? Guess what we can do it using this [tool]( https://github.com/spipm/Depix)
 convert the pdf file to an image
 ```sh
