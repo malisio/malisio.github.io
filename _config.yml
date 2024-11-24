@@ -22,13 +22,13 @@ description: >- # used by seo meta and the atom feed
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
-url: ""
+url: "malisio.github.io"
 
 github:
   username: malisio # change to your GitHub username
 
 twitter:
-  username: twitter_username # change to your Twitter username
+  username: elonmusk # XD (jk jk )
 
 social:
   # Change to your full name.
@@ -97,7 +97,7 @@ theme_mode: # [light | dark]
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: https://hi-static.z-dn.net/files/dac/1aca73542278bca927abd8f4b85d807a.jpg
+avatar: https://i.pinimg.com/736x/a3/d4/77/a3d47781de27f11251394d95c575f82b.jpg
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
