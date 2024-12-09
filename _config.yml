@@ -98,7 +98,7 @@ cdn:
 
 # the avatar on sidebar, support local or CORS resources
 avatar:
-  https://i.pinimg.com/736x/0e/27/db/0e27db848546f0a25cd13834a7263a46.jpg
+  https://malisio.github.io/assets/pfps/guts.jpg
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
